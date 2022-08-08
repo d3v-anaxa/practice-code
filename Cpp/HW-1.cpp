@@ -1,6 +1,5 @@
 // Differenciating lowercase, UPPERCASE, and digits using if-else statements
 #include <iostream>
-#include <typeinfo>
 using namespace std;
 int main(){
     char inp;
