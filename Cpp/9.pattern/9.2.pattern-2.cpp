@@ -3,6 +3,7 @@ using namespace std;
 int main(){
     // digit incrimenting square pattern
     int n;
+    std::cout << "Square Pattern :: Enter the length of each side : ";
     std::cin >> n;
     int a = 1;
     std::cout << endl;
