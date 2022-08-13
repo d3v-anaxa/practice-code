@@ -10,6 +10,9 @@ int main(){
     std::cout << ASCII << " ";
     i++;
     ASCII++;
+        if (ASCII == '['){
+            ASCII = 'A';
+        }
         if (i%side == 0) {
         std::cout << endl;
         }
