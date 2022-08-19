@@ -4,7 +4,7 @@
 using namespace std;
 int main(){
 	int input, exponent = 0, output = 0;
-    std::cout << "Enter the decimal number : ";
+    std::cout << "Enter the binary number : ";
     std::cin >> input;
 
     while (input != 0 ){
