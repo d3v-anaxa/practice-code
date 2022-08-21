@@ -1,6 +1,6 @@
 #include <iostream> 
 using namespace std;
-
+/* default solution
 class Solution {
 public:
     bool isPowerOfTwo(int n) {
@@ -10,6 +10,7 @@ public:
       }  return (m == 1.00 ? true : false);
     }
 };
+ */
 
 /* <--- if the input was a double---> [RECURSSION]
 class Solution {
@@ -19,6 +20,21 @@ public:
     }
 };
  */
+
+// <-- solution using right-shift operator --->
+ class Solution {
+public:
+    bool isPowerOfTwo(int n) {
+      int count = 0;
+      while(n!=0){
+        if(n&1){count++;}
+        n>>=1;
+      }
+      return count == 1 ? true : false;
+    }
+};
+
+
 int main(){
 	Solution myObj;
     std::cout << boolalpha << myObj.isPowerOfTwo(128) << endl;
