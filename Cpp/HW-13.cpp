@@ -1,6 +1,7 @@
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
+// alternative array swap
 
 void printArray(int array[], int size)
 {
@@ -11,23 +12,24 @@ void printArray(int array[], int size)
   std::cout << endl;
 }
 
-int swap(int array[],int size)
+void swap(int array[],int size)
 {
-  int index = size - 1;
-  for (int i = 0; i < (index / 2); i++)
+  for (int i = 0; i < size;i++)
   {
-    swap(array[i], array[index - i]);
+    if(i&1)
+    {
+      swap(array[i], array[i - 1]);
+    }
   }
-  return array[size];
 }
 
-int main()
+  int main()
 {
-  int array[5] = {21, -5, 11, -6, 3};
+  int array[5] = {-2, 6, 2, 9, 11};
   int size = 5;
   std::cout << "ARRAY [before]:\t ";
   printArray(array, size);
   swap(array, size);
-  std::cout << "ARRAY [after reversification]: \t";
+  std::cout << "ARRAY [after alternate swap]: \t";
   printArray(array, size);
 }
