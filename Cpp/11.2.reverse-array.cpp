@@ -8,7 +8,6 @@ void printArray(int array[], int size)
   {
     std::cout << array[i] << "\t";
   }
-  std::cout << endl;
 }
 
 int swap(int array[],int size)
@@ -25,9 +24,9 @@ int main()
 {
   int array[5] = {21, -5, 11, -6, 3};
   int size = 5;
-  std::cout << "ARRAY [before]:\t ";
   printArray(array, size);
+  std::cout << " : ARRAY [before]\n";
   swap(array, size);
-  std::cout << "ARRAY [after reversification]: \t";
   printArray(array, size);
+  std::cout << " : ARRAY [after reversification]\n";
 }
