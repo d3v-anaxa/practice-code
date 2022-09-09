@@ -30,7 +30,7 @@ console.log(lightSpeed); // 299792
 // string indexing
 
 let string = "Johnny Depp";
-console.log(string[string.length-1]); // p
+console.log(string[string.length - 1]); // p
 
 // trim()
 
@@ -52,14 +52,14 @@ console.log(string); // dwayne douglas johnson
 
 // slice()
 
-string = string.slice(0,string.length-8);
+string = string.slice(0, string.length - 8);
 console.log(string); // dwayne douglas
 
 // js datatypes : undefined | null | boolean | number | string | symbol | bigint | object
 
 // typeof()
 
-console.log(typeof var1,typeof lightSpeed); // string number
+console.log(typeof var1, typeof lightSpeed); // string number
 
 // convert number to string
 
@@ -76,7 +76,7 @@ console.log(typeof num); // number
 
 let firstName = "Chris";
 let lastName = "Evans";
-let fullName = firstName + " " + lastName; 
+let fullName = firstName + " " + lastName;
 console.log(fullName); // Chris Evans
 // string concatination EXMP2
 
@@ -112,20 +112,20 @@ console.log(typeof null1); // object
 
 let BigInt1 = BigInt(5658794);
 let BigInt2 = 549865497n;
-console.log(BigInt1+BigInt2); // 565498417875163105305n
+console.log(BigInt1 + BigInt2); // 565498417875163105305n
 
 // == or != : Checks only for the values
 
 let competitor1 = "10";
 let competitor2 = 10;
-console.log(competitor1==competitor2); // true
-console.log(competitor1!=competitor2); // false
+console.log(competitor1 == competitor2); // true
+console.log(competitor1 != competitor2); // false
 
 
 // === or !== : Checks for the values and datatypes
 
-console.log(competitor1===competitor2); // false
-console.log(competitor1!==competitor2); // true
+console.log(competitor1 === competitor2); // false
+console.log(competitor1 !== competitor2); // true
 
 // falsy values : false | "" | undefined | null | 0
 // truthy values : everything else these falsy values are truthy values
@@ -134,7 +134,7 @@ console.log(competitor1!==competitor2); // true
 
 num = 8714876;
 
-if (num%2==0){
+if (num % 2 == 0) {
     console.log(`${num} is an even number`)
 }
 else {
@@ -145,7 +145,7 @@ else {
 
 let condition1 = false;
 
-if (condition1){
+if (condition1) {
     console.log(condition1)
 }
 else {
@@ -155,15 +155,15 @@ else {
 // ternary operator / conditional operator
 
 let inputYear = 2022;
-let outputYear = inputYear%4==0 ? `${inputYear} is a leap year` : `${inputYear} is not a leap year`;
+let outputYear = inputYear % 4 == 0 ? `${inputYear} is a leap year` : `${inputYear} is not a leap year`;
 console.log(outputYear); // 2022 is not a leap year
 
 // and operator --------------------------------------------------------- |
 firstName = "Mark";
 let age = "55";
-if (firstName[0] === "M" && age<40){
+if (firstName[0] === "M" && age < 40) {
     console.log(`${firstName} is still young`)
-}else{
+} else {
     console.log(`${firstName} is getting old`)
 } // Mark is getting old
 
@@ -171,9 +171,9 @@ if (firstName[0] === "M" && age<40){
 
 let child = "boy";
 
-if(child ==='boy' || child === 'girl'){
+if (child === 'boy' || child === 'girl') {
     console.log(`Congrats! you have a ${child}`)
-}else {
+} else {
     console.log(`I'm sorry`)
 } // Congrats! you have a boy
 
@@ -282,31 +282,31 @@ switch(month_list[month_index]){
 
 let sum = 0;
 num = 0;
-while (num<10) {
+while (num < 10) {
     num++;
-    sum+=num
+    sum += num
 }
 console.log(sum)
 
 // for loop : let keyword is used for internal declaration whereas var keyword is used for global declaraion---------------------------------------------------------------- |
 
 for (let num_initial = 0; num_initial <= 10; num_initial++) {
-    
+
     // if (num_initial===5){
     //         break;
     // } // use of break keyword
-    
+
     // if (num_initial===5){
     //         continue;
     // } // use of continue keyword
-    
-    sum+=num_initial;
+
+    sum += num_initial;
 }
 console.log(sum);
 
 // arrays {reference type} : ordered collection of items or elements.
 
-let array = ["Bill Gates","Warren Buffet","Jeff Bezos","Larry Ellison"]
+let array = ["Bill Gates", "Warren Buffet", "Jeff Bezos", "Larry Ellison"]
 
 // checking an array
 
