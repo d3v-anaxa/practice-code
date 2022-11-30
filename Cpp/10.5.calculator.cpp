@@ -16,7 +16,12 @@ int main(){
     double long num1, num2;
     int op;
     std::cout << "| Select a valid operation";
-    std::cout << "\n| 1. Addition[+]\n| 2. Subtraction[-]\n| 3. Multiplication[*]\n| 4. Division[/]\n| 5. Square Root\n| " && std::cin >> op;
+    std::cout << "| 1. Addition[+]" << std::endl;
+    std::cout << "| 2. Subtraction[-]" << std::endl;
+    std::cout << "| 3. Multiplication[*]" << std::endl;
+    std::cout << "| 4. Division[/]" << std::endl;
+    std::cout << "| 5. Square Root[^(1/2)]" << std::endl;
+    std::cout << "| Enter your choice : " && std::cin >> op;
 
     switch (op)
     {
