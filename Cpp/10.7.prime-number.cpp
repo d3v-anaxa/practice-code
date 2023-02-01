@@ -1,16 +1,21 @@
 #include <iostream> 
-using namespace std;
-
-bool isPrime(unsigned long x){
-    int a = x;
-    while ( a > 2 ) {
-        a--;
-        if(x%a==0){return false;}else if(a == 1){return true;};
-    }; 
-}
+#define ll long long
 
 int main(){
-    unsigned long input;
+    ll int input{};
     std::cout << "Enter a positive Integer : " && std::cin >> input;
-	std::cout << boolalpha << input << " is prime : "<< isPrime(input) << endl;
+    if (input == 0) {
+        std::cout << "Zero is neither a prime nor a composite number" << "\n";
+        exit(EXIT_SUCCESS);
+    }
+    std::cout 
+        << std::boolalpha 
+        << ([](ll x){
+                if (x < 0)return false;
+                for (int i = 2; i <= x/2; i++)
+                    if(x % i == 0){return false;}
+                return true;
+            }(input) ? "Is prime" : "Not prime") 
+        << "\n";
+     return 0;
 }
