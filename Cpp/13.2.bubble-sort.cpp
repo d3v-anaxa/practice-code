@@ -6,10 +6,8 @@ using namespace std;
 
 void printOutput(vector<int> &nums)
 {
-  for (int i = 0; i < nums.size(); i++)
-  {
-    std::cout << nums[i] << "\t";
-  }
+  for (const auto& x : nums)
+    std::cout << x << "\t";
   std::cout << endl;
 }
 
