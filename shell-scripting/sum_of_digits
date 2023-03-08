@@ -1,0 +1,14 @@
+#!/bin/python3
+
+from math import abs
+
+n = int(input("Enter the number : "))
+sum = 0
+t = n
+while (t != 0):
+    sum = sum * 10 + (t % 10)
+    t /= 10
+
+sum = abs(sum)
+
+print("Sum of digits of", n, "is :", sum)
